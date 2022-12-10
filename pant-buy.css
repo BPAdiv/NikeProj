@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@700&family=Bad+Script&family=Cinzel:wght@500&family=Diplomata+SC&family=Lobster&family=Marck+Script&family=Merriweather:wght@700&family=Permanent+Marker&family=Roboto:wght@400;500;700;900&family=Shrikhand&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: .2rem 2rem;
+    gap: 15px;
+    background-color: rgb(237, 237, 237);
+    /* color: white; */
+    font-size: 1rem;
+    margin-top: 0;
+    margin-right: 0;
+    /* width: 100%; */
+    /* z-index: 10; */
+}
+
+input {
+    border: none;
+    padding-inline: .6rem;
+    padding-block: .3rem;
+    border-radius: 15px;
+    width: 4rem;
+    /* transition: ease 600ms; */
+
+}
+
+input:focus {
+    outline: none;
+    width: initial;
+    border: .5px solid black;
+
+}
+
+input:hover {
+    background-color: rgb(203, 200, 200);
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-size: .9rem;
+    /* color: white; */
+}
+
+.nav-top img {
+    width: 22px;
+    height: 22px;
+}
+
+#logo {
+    margin-right: auto;
+}
+
+#logo img {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+ul {
+    width: 100%;
+}
+
+.nav-top il:last-child,
+.nav-top il:nth-child(6) {
+    background-color: white;
+    padding: .3rem 1rem;
+    border-radius: 15px;
+}
+
+.nav-top il:last-child:hover,
+.nav-top il:nth-child(6):hover {
+    background-color: rgb(187, 185, 185);
+    cursor: pointer;
+    color: white;
+}
+
+.buyer {
+    margin-top: 3rem;
+    width: 80vw;
+    display: flex;
+    gap: 2rem;
+    /* align-items: flex-end; */
+    justify-content: center;
+    height: max-content;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: -1px 2px 15px 9px rgba(0, 0, 0, 0.23);
+}
+
+.all-img {
+    position: relative;
+    height: 20rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+.all-img img {
+    /* height: 4rem; */
+    width: 5rem;
+}
+
+.all-img div:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* bottom: 0;
+    right: 0; */
+    transform: translateX(50%);
+    transform: translateY(-10%);
+    /* right: 0; */
+    height: 70%;
+    width: 100%;
+}
+
+.desc {
+    /* margin-bottom: auto; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    justify-content: space-between;
+    max-height: 100%;
+    /* mar */
+    /* padding: 0; */
+}
+
+.head p {
+    font-size: 1.2rem;
+    color: grey;
+}
+
+#money {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: red;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.sub-size input {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.sub-size label,
+button {
+    /* padding: .7rem 1.5rem; */
+    padding: .5rem 2rem;
+    /* width: 7rem;
+    height: 4rem; */
+    border-radius: 10px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.checkout button:first-child {
+    background-color: green;
+    color: white;
+    width: 80%;
+}
+
+.checkout button:last-child {
+    background-color: blue;
+    color: white;
+    width: 80%;
+    /* transform: scale(1.1); */
+    /* transform: scale(1.1); */
+}
+
+.sub-size label:hover,
+.sub-size input:checked+label {
+    cursor: pointer;
+    background-color: blanchedalmond;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+/* h1,
+h2,
+p {
+    margin: 0;
+} */
+#bg-img {
+    background-image: url(./pants1.jpg);
+    background-size: cover;
+    transition: ease 250ms;
+}
+
+/* frst pic */
+.all-img img:hover+img+img+#bg-img {
+    background-image: url(./pants1.jpg);
+    /* opacity: 0.5; */
+}
+
+.all-img img:hover+img+#bg-img {
+    background-image: url(./pants2.webp);
+    /* opacity: 0.5; */
+}
+
+.all-img img:hover+#bg-img {
+    background-image: url(./pants3.webp);
+    /* opacity: 0.5; */
+}
+
+.home {
+    margin-top: 3rem;
+    background-color: aquamarine;
+    padding: 0 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.home:hover {
+    background-color: rgb(36, 164, 121);
+}
+
+footer {
+    padding: 0.1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.contact,
+.nav-media {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact {
+    font-size: .8rem;
+}
+
+.nav-media {
+    width: max-content;
+}
+
+.nav-media il {
+    /* width: 40px;
+    height: 40px; */
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: grey;
+    padding: 0.5rem;
+    padding-block: 0.3rem;
+}
+
+.nav-media img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.nav-media il:hover {
+    background-color: white;
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 3vw;
+    }
+
+    .buyer {
+        flex-direction: column;
+    }
+
+    .all-img div:last-child {
+        top: 25px;
+    }
+
+    .all-img {
+        height: 25rem;
+    }
+
+    .nav-top :nth-child(4) {
+        display: none;
+    }
+
+    .nav-top :nth-child(5) {
+        display: none;
+    }
+
+    .nav-top :nth-child(2) {
+        display: none;
+    }
+
+    .nav-top input:focus {
+        width: 8rem;
+    }
+
+    footer {
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-media,
+    .contact {
+        flex-wrap: wrap;
+        padding: 0;
+
+    }
+}
