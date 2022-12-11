@@ -356,6 +356,15 @@ footer {
     margin-top: 5rem;
 }
 
+#banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(15%);
+    transform: translateY(15%);
+    z-index: -10000;
+}
+
 @media (max-width:768px) {
     html {
         font-size: 3.5vw;
