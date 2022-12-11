@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@700&family=Bad+Script&family=Cinzel:wght@500&family=Diplomata+SC&family=Lobster&family=Marck+Script&family=Merriweather:wght@700&family=Permanent+Marker&family=Roboto:wght@400;500;700;900&family=Shrikhand&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -144,6 +147,8 @@ video {
     align-items: center;
     justify-content: center;
     position: relative;
+    width: 100%;
+    background-color: black;
 }
 
 .video-top h1 {
@@ -300,9 +305,22 @@ footer {
     background-color: white;
 }
 
+#backto {
+    text-decoration: none;
+    color: black;
+    padding: .5rem 1rem;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+#backto:hover {
+    color: white;
+    background-color: black;
+}
+
 @media (max-width:768px) {
     html {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     .product {
